@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+<div class="slide cover current">
+    <h1>组件架构(react)下的WebApp开发(战术打法)</h1>
+</div>
+
+<div class="slide">
+  <div>
+  <ul>
+    <li>Spain:<br>Matches Played: 3  Goals scored: 4  Attempts On Target: 23  Distance covered: 325.5 km
+    <li>Brazil:<br>Matches Played: 3  Goals scored: 7  Attempts On Target: 35  Distance covered: 301.0 km
+    <li>Germany:<br><mark>Matches Played: 3  Goals scored: 7  Attempts On Target: 24  Distance covered: 341.3 km</mark>
+    <li>Netherlands:<br>Matches Played: 3  Goals scored: 10  Attempts On Target: 33  Distance covered: 328.3 km
+    <li>Argentina:<br>Matches Played: 3  Goals scored: 5  Attempts On Target: 27  Distance covered: 308.0 km
+    <li>France:<br>Matches Played: 3  Goals scored: 7  Attempts On Target: 39  Distance covered: 324.8 km
+  </ul>
+  </div>
+</div>
+
+<div class="slide">
+  <img src="pics/figure1.svg" />
+</div>
+  
+<div class="slide">
+  <img src="pics/figure2.svg" />
+</div>
+  
+<div class="slide">
+  <img src="pics/figure3.svg" />
+</div>
+  
+<div class="slide">
+  <img src="pics/figure4.svg" />
+</div>
+  
+<div class="slide">
+  <img src="pics/figure5.svg" />
+</div>
+
+<div class="slide">
+  <h2>Why React?</h2>
+  <ul class="list">
+    <li>Components (React)
+    <li>Model (Flux)
+    <li>Scalability (React x React Touch)
+    <li>Reliability
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Component</h2>
+  <ul class="list">
+    <li>Lifecycle: 
+      <p><span style="color:blue">mounting</span>  > <span style="color:green;">updating</span> > <span style="color:grey">unmouting</span>
+      <p><span style="color:blue">[mouting]</span> componentWillMount()
+      <p><span style="color:blue">[mouting]</span> componentDidMount()
+      <p><span style="color:green;">[updating]</span> componentWillReceiveProps(nextProps) <span class="comment">// setState不触发事件</span>
+      <p><span style="color:green;">[updating]</span> shouldComponentUpdate(nextProps, nextState) <span class="comment">// return false可以阻止演染</span>
+      <p><span style="color:green;">[updating]</span> componentWillUpdate(nextProps, nextState)
+      <p><span style="color:green;">[updating]</span> componentDidUpdate(prevProps, prevProps)
+      <p><span style="color:grey;">[unmouting]</span> componentWillUnmount()
+    <li>State & Props: 状态和属性, 声明式/面向领域
+    <li>Virtual DOM
+    <li>JSX Syntax
+    <li>Demo: ImageViewer
+  </ul>
+</div>
+
+
+<div class="slide">
+  <h2>Data Flow</h2>
+  <ul class="list">
+    <li>One-way binding: 关联状态
+    <li>Flux
+    <li>Demo: Login
+  </ul>
+</div>
+
+
+<div class="slide">
+  <h2>Flux vs. MVC</h2>
+  <div>
+    <div>
+      <img src="pics/mvc-complex.png" width="50%" />
+      <div class="comment" style="text-align:right">(图片来自fluxxor.com)</div>
+    </div>
+    <div>
+      <img src="pics/figure6.svg" width="100%" />
+    </div>
+  </div>
+</div>
+
+
+<div class="slide">
+  <h2>Scalability</h2>
+  <ul class="list">
+    <li>React Touch: Routing
+    <li>SIRA: 如何审视自己的代码架构
+    <p>(S)plit
+    <p>(I)solation
+    <p>(R)emix
+    <p>(A)bstract
+    <li>Demo: X2 
+    <p>React x React Touch x Cuvee UI x Zynga Scroller x SCSS x Gulp x Webpack
+  </ul>
+</div>
+
+
+<div class="slide end">
+  Thx ;)
+</div>
+  
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

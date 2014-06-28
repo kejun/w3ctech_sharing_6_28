@@ -1,0 +1,77 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: normal 16px / 1.62 helivetica, arial, sans-serif;
+}
+
+.slide {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 3em;
+  margin-right: 1em;
+}
+
+.slide.current {
+  z-index: 3;
+  opacity: 1;
+}
+
+.slide.next {
+  z-index: 2;
+  opacity: 1;
+}
+
+.slide img {
+  min-width: 95%;
+  max-height: 95%;
+}
+
+.cover {
+  background:#fff url(http://img.fifa.com/mm/photo/tournament/competition/02/38/03/91/2380391_big-lnd.jpg) no-repeat 0 0;
+  -webkit-background-size: 100%;
+}
+
+.list {
+  font-size: 2em;
+}
+
+.list li p {
+  margin: 0;
+  font-size: .5em;
+}
+
+.cover h1 {
+  text-shadow: 0 0 5px #333;
+  color: #fff;
+}
+
+.end {
+  font-size: 2em;
+}
+
+.comment {
+  color: #ccc;
+  font-size: .8em;
+}
